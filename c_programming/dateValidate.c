@@ -29,3 +29,22 @@ void main()
         printf("\nYear is invalid!");
     }
 }
+1-31 1,3,5,7,8,10,12
+1-30 4,6,9,11
+1-28 2 normal
+1-29 2 leap
+
+1. jan = 31
+2. feb = 28 / 29(leap)
+3. mar = 31
+4. apr = 30
+5. may = 31
+6. jun = 30
+7. jul = 31
+8. aug = 31
+9. sep = 30
+10. oct = 31
+11. nov = 30
+12. dec = 31
+
+
