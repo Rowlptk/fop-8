@@ -1,0 +1,37 @@
+structure:
+
+is a shape or pattern
+
+collection of different types of variables
+
+eg library
+
+name ==> string
+price ==> float
+pages ==> int
+block ==> char
+
+
+
+
+
+
+File Handling:
+
+external file ==> secondary storage device
+
+file operation:
+
+    file open
+    write/ read
+    close
+
+FILE *fp;
+
+
+
+
+
+
+
+

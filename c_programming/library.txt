@@ -1,0 +1,4 @@
+Qwerty	345.00	567	Q
+JAVA Programming	450.56	789	J
+Programming with Python	560.34	800	P
+C Programming	333.00	600	C
