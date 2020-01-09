@@ -1,0 +1,33 @@
+HTML ==> Hypertext markup language
+responsibe ==> content on webpage
+
+text, links, images, audio, vedio,
+forms, inputs etc etc..
+
+tags ==> <exp>dhcghc</exp>
+
+<exp>  => <br>
+
+html ==> content
+css ==> design/decoration
+javascript ==> web based programming langauge
+			actions
+
+1 month
+
+Text Editor ==> VS Code
+IDE ==> Integrated development environment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
