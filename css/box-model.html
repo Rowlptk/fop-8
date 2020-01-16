@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-model</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background: #f4f4f4;
+            border: 2px solid #777;
+            /* All side padding/margin */
+            padding: 10px;
+            margin: 10px;
+            /* top right bottom left */
+            padding: 10px 20px 30px 40px;
+            margin: 10px 20px 30px 40px;
+            /* top/bottom right/left */
+            padding: 30px 50px;
+            margin: 30px 50px;
+            /* Individual side*/
+            padding-top: 100px;
+            margin-bottom: 100px;
+
+        }
+        <!-- float and align, links and buttons, navbar, sidebar, inline-block, position,form design  -->
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repudiandae dictaeligendi, id sint tenetur.</p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repudiandae dicta eligendi, id sint tenetur.</p>
+    </div>
+</body>
+</html>
