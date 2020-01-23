@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .box {
+            background: #f4f4f4;
+            height: 40px;
+            width: 100px;
+            border: 1px solid yellow;
+            margin: 400px auto;
+            text-align: center;
+            padding-top: 20px;
+            border-radius: 10px;
+
+            transition: all 2s ease 1s;
+            /*transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 0s;
+            transition-timing-function: ease;
+             linear ==> same speed,
+            ease ==> s, f, s 
+            ease-in ==> s, l 
+            ease-out ==> l, s 
+            ease-in-out ==> s, l, s*/
+        }
+        .box:hover{
+            height: 80px;
+            width: 200px;
+            padding-top: 50px;
+            font-size: 2em;
+            transform: rotateZ(1440deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hover</div>
+</body>
+</html>

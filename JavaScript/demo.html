@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Demo</title>
+</head>
+<body>
+    <h1>This is text</h1>
+
+    <script>
+        document.querySelector('h1').addEventListener('click', demo);
+
+        function demo(e)
+        {
+            e.target.innerHTML = 'Text Changed';
+        }
+    </script>
+</body>
+</html>

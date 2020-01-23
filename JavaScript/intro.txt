@@ -1,0 +1,28 @@
+javaScript ==> web based programming language
+
+html,
+css,
+js ==> action ==> 
+client ==> full stack
+
+css ==> style
+js ==> <script></script>
+
+css ==> .css
+js ==> .js
+
+link
+
+<script src="app.js"></script>
+
+6-7 days
+console.log(), variables==> var, let, const
+data types ==> number, string ...
+template string
+string methods
+math methods
+date
+
+ 3 days ==> basics using console.log
+ 2 days ==> DOM ==> html ==> head , body==> h1 ==> manipulate
+ 2 days ==> Task List 

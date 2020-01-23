@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .box {
+            background: #f4f4f4;
+            height: 40px;
+            width: 100px;
+            border: 1px solid yellow;
+            text-align: center;
+            padding-top: 20px;
+            border-radius: 10px;
+            position: relative; 
+            /*animation-name: animate1;*/
+            animation-name: animate2;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1s; 
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        @keyframes animate2 {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                top:0;
+                left: 85vw;
+                height: 80px;
+                width: 200px;
+                padding-top: 50px;
+                font-size: 2em;
+            }
+            50% {
+                top:92vh;
+                left: 90vw;
+                height: 40px;
+                width: 100px;
+                padding-top: 20px;
+                font-size: 1em;
+            }
+            75% {
+                top:85vh;
+                left: 0vw;
+                height: 80px;
+                width: 200px;
+                padding-top: 50px;
+                font-size: 2em;
+            }
+            100% {
+                top:0vh;
+                left: 0vw;
+                height: 40px;
+                width: 100px;
+                padding-top: 20px;
+                font-size: 1em;
+            }
+        }
+        /* flex, grid */ 
+        @keyframes animate1 {
+            from {
+                left:0;
+            }
+            to {
+                left: 85vw;
+                height: 80px;
+                width: 200px;
+                padding-top: 50px;
+                font-size: 2em;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box">Hover</div>
+</body>
+</html>
