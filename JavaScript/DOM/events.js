@@ -43,6 +43,30 @@ function runEvent(e) {
 }
 
 // Event Deligation
+//const deleteItem = document.querySelectorAll('.delete-item');
+
+//deleteItem.addEventListener('click', delItem);
+
+document.body.addEventListener('click', delItem)
+
+
+function delItem(e)
+{
+    if(e.target.parentElement.classList.contains('delete-item'))
+    {
+        e.target.parentElement.parentElement.remove();
+    }
+   // 
+   
+}
+
+
+
+
+
+
+
+
 // Next day
 // Bootstrap
 
