@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap BoilerPlate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">Navbar</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"
+                        data-toggle="dropdown">About</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link 1</a>
+                            <a href="#" class="dropdown-item">Link 2</a>
+                            <a href="#" class="dropdown-item">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+<div class="container">
+
+    <!-- list group -->  
+    <ul class="list-group my-4">
+        <li class="list-group-item"><a href="#">Link 1</a></li>
+        <li class="list-group-item"><a href="#">Link 2</a></li>
+
+        <li class="list-group-item"><a href="#">Inbox
+            <span class="badge badge-danger">23</span>
+        </a></li>
+        
+        <li class="list-group-item"><a href="#">Link 4</a></li>
+        <li class="list-group-item"><a href="#">Link 5</a></li>
+    </ul>
+
+    <!-- breadcrumb -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">C Drive</a></li>
+        <li class="breadcrumb-item"><a href="#">Users</a></li>
+        <li class="breadcrumb-item"><a href="#">Abhishek</a></li>
+    </ol>
+
+    <!-- form -->
+    <form>
+        <div class="form-group">
+            <label for="usr">Username</label>
+            <input type="text" id="usr" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" class="form-control">
+        </div>
+        <input type="submit" value="Login" class="btn btn-outline-danger">
+    </form>
+
+    <!-- alert box -->
+    <div class="alert alert-success alert-dismissable my-3">
+        <button class="close" data-dismiss="alert">&times;</button>
+        Your Form is <strong>Submitted</strong> Successfully.
+    </div>
+
+    <!-- progress-bar -->
+    <div  class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 60%" >
+            60% Complete
+        </div>
+    </div>
+</div>
+
+    <div style="height : 300px"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        let pr = document.querySelector('.progress-bar');
+        pr.addEventListener('click', increment);
+        let w = 777;
+        function increment(e)
+        {
+           
+            e.target.style.width = `${(w/1110)*100}%`;
+            e.target.textContent = `${(w/1110)*100 }% Complete`;
+            w = w + 0.1*1110;
+        }
+    </script>
+
+    table, pagination, card, jumbotron, carousel, modal, grid
+</body>
+</html>
