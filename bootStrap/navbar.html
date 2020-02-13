@@ -88,10 +88,12 @@
 
     <!-- progress-bar -->
     <div  class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 60%" >
-            60% Complete
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 70%" >
+            70% Complete
         </div>
     </div>
+
+    <button class="btn btn-primary mt-3 " id="b1">Clear</button>
 </div>
 
     <div style="height : 300px"></div>
@@ -100,18 +102,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <script>
-        let pr = document.querySelector('.progress-bar');
-        pr.addEventListener('click', increment);
-        let w = 777;
+        let clear = document.querySelector('#b1');
+        let pr = document.querySelector('.progress');
+        let pr_bar = document.querySelector('.progress-bar');
+        clear.addEventListener('click',clearProgress);
+        pr.addEventListener('mouseenter', increment);
+        let w = pr_bar.offsetWidth + 0.01*1110;
+        
+
+        function clearProgress() {
+            pr_bar.style.width = '0%';
+            pr_bar.textContent = '';
+            w = 0.01*1110;
+        }
+
+
+
         function increment(e)
-        {
-           
-            e.target.style.width = `${(w/1110)*100}%`;
-            e.target.textContent = `${(w/1110)*100 }% Complete`;
-            w = w + 0.1*1110;
+        {   
+            if(((w/1110)*100)<=99)
+            {
+                
+                pr_bar.style.width = `${(w/1110)*100}%`;
+                pr_bar.textContent = `${((w/1110)*100).toFixed(0) }% Complete`;
+                w = w + 0.01*1110;
+                
+            }
+            else  {
+                pr_bar.style.width = '100%';
+                pr_bar.textContent = 'Max Reached!';
+
+            }
         }
     </script>
 
-    table, pagination, card, jumbotron, carousel, modal, grid
+    <!-- table, pagination, card, jumbotron, carousel, modal, grid -->
 </body>
 </html>
