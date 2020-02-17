@@ -1,0 +1,32 @@
+<!-- Jquery ==> is a javascript library
+write less do more javascript
+
+methods ==> hide() ==> effects
+
+download ==> code.jquery.com 
+CDN ===> developers.google.com/speed/libraries  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery demo</title>
+    hide, show, toggle, on method, css
+    fade, sliding, animate
+</head>
+<body>
+    <p>this is a text 1</p>
+    <p>this is a text 2</p>
+    <p>this is a text 3</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('p').click(function() {
+                $(this).hide();
+            })
+        })
+    </script>
+</body>
+</html>

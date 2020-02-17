@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+</head>
+<body>
+    <button>Animate</button>
+
+    <br><br>
+    <div style="height: 100px; width: 100px; border-radius: 50%; background:red; position:relative;">
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('button').click(function loop() {
+                $('div').animate({top:'200px', left: '500px'},100);
+                $('div').animate({top:'0px', left: '0px'},100);
+                $('div').animate({top:'200px', left: '0px'},100);
+                $('div').animate({top:'200px', left: '500px'},100);
+                $('div').animate({top:'0px', left: '0px'},100);
+                loop();
+            })
+        })
+    </script>
+</body>
+</html>
