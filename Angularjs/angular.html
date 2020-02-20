@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular js Directives</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<!-- Directives ==> ng-app, ng-model, ng-bind, ng-controller, ng-include 
+ng-repeat -->
+<body ng-app="myApp" ng-controller="myCtrl">
+    <input type="text" ng-model="demo" placeholder="Write Something...">
+    <h1 ng-bind="demo"></h1>
+    <p>Hello {{demo}}</p>
+    <hr>
+    <div ng-include="'welcome.html'"></div>
+    <hr>
+    <h3>{{greetings}} Anish</h3>
+    <hr>
+    <ul>
+        <li ng-repeat="fruit in fruits">{{fruit}}</li>
+    </ul>
+
+    <script>
+        let app = angular.module('myApp',[]);
+        app.controller('myCtrl', function($scope) {
+            $scope.demo = "Apple";
+            $scope.greetings = "Good Morning!";
+            $scope.fruits = ['apple','mango','banana','pineapple','orange','grapes','peach','papaya','watermelon'];
+        })
+    </script>
+</body>
+</html>
